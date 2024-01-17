@@ -1,0 +1,75 @@
+.about{
+    position: relative;
+    background-color: var(--color-black);
+    width: 100%;
+}
+
+.about_overlay{
+    position: absolute;
+    inset:0;
+   
+}
+.about_overlay>img{
+    z-index: 0;
+    width: 391px;
+    height: 415px;
+   
+   
+}
+.about_content{
+    z-index: 10;
+    width: 100%;
+    
+}
+
+.about_left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+.about_right{
+    flex:1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+}
+.about_knife_image{
+   
+    margin: 2em 5em;
+}
+
+.about_knife_image>img{
+    height: 910px;
+  
+}
+.about_left>p,.about_right>p{
+    margin: 2em 0em;
+    color:var(--color-grey)
+}
+
+@media only screen and  (min-width:368px) and (max-width: 600px) 
+{
+    .about_overlay img {
+        width: 80%;
+        height: 320px;
+    }
+    .about_content{
+        flex-direction: column;
+        padding: 0em;
+    }
+
+    .about_knife_image>img{
+        height: 700px;
+        width:80%;
+      
+    }
+    .about_left{
+        justify-content: center;
+    }
+}

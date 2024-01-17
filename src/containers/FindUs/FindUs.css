@@ -1,0 +1,21 @@
+.findUs{
+    background-color: var(--color-black);
+    width: 100%;
+
+}
+
+.findUs_content p{
+    color: var(--color-grey)
+}
+
+@media only screen and  (min-width:368px) and (max-width: 600px) 
+{
+    .wrapper_image{
+        width:80%;
+        height: auto;   
+        margin-left: 0em;    
+    }
+       
+}
+
+
